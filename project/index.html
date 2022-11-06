@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Главная страница</title>
+        
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/slider.js"></script>
+        <script defer src="js/main.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <section class="container">
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города"><img src="images/location-current.svg" alt="loc"><span></span></div>
+            </section>
+            <section class="container">
+				<div class="reg">
+					<a class="logo"></a>
+				<div class="search2 homepage">
+					<form method="get" action="/search" role="search" class=search-form">
+						<input name="q" class="search-input" type="text" value placeholder="Поиск..." autocomplete="off">
+						<input type="hidden" name="post-type" value="product">
+						<button type="submit" class="search">
+							<img src="images/search.svg" alt="search">	
+						</button>
+					</form>
+				</div>
+				<div class="shoppihg-cart">
+					<a href="#" class="user"></a>
+					<a href="order.html" class="shopping"></a>
+				</div>	
+				</div>
+			</section>
+            <section class="container">
+                <nav class="topmenu">
+                    <a href="index.html"><span>Главная страница</span></a>
+                    <a href="catalog.html"><span>Каталог</span></a>
+                    <a href="product.html"><span>Товар</span></a>
+                    <a href="order.html"><span>Корзина</span></a>
+                    <a href="contacts.html"><span>Контакты</span></a>
+                </nav>
+            </section>
+        </header>
+        
+        <main>
+            <!-- action block -->
+            <section class="action">
+                <div class="container">
+                    <h5>АКЦИЯ!!!   11.11</h5>
+                    <p>
+                        ДО СТАРТА ОСТАЛОСЬ:
+                        <span class="actiontimer" data-actionend="2022-11-11T00:00:00">&nbsp;</span>
+                    </p>
+                </div>
+            </section>
+            <!-- /action block -->
+            <!-- slider block -->
+            <section class="slider" id="slider1">
+                <div class="slider_desk">
+                    <div class="slider_block">
+                        <img src="images/img80.png" alt="pic 1">
+                    </div>
+                    
+                    <div class="slider_block">
+                        <img src="images/img85.png" alt="pic 2">
+                    </div>
+                    
+                    <div class="slider_block">
+                        <img src="images/img104.png" alt="pic 3">
+                    </div>
+                </div>
+                
+                <button type="button" class="to_left icon"></button>
+                
+                <button type="button" class="to_right icon"></button>
+                
+                <div class="slider_points"></div>
+            </section>
+            <!-- /slider block -->
+            <!-- slider block -->
+           <!-- <section class="slider" id="slider2">
+                <div class="slider_desk">
+                    <div class="slider_block" style="background:red">
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                    </div>
+                    
+                    <div class="slider_block" style="background:green">
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                    </div>
+                    
+                    <div class="slider_block" style="background:blue">
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                        <p>Some text without pictures.</p>
+                    </div>
+                </div>
+                
+                <button type="button" class="to_left icon"></button>
+                
+                <button type="button" class="to_right icon"></button>
+                
+                <div class="slider_points"></div>
+            </section>
+            <!-- /slider block -->
+            <section class="container">
+				<div class="grid">
+					<div class="first">
+						<img src="images/banner1.png" alt="banner1">
+					</div>
+					<div class="second">
+						<img src="images/ban4.png" alt="ban4">		
+					</div>
+					<div class="third">
+						<img src="images/ban6.png" alt="ban6">
+					</div>
+					<div class="fourth">
+						<img src="images/ban5.png" alt="ban5">	
+					</div>
+					<!--<div class="fifth">
+						<img src="images/ban3_2.png" alt="ban3_2">
+					</div>
+					<div class="sixth">
+						<img src="images/ban3.png" alt="ban3">
+					</div>	-->
+					<div class="seventh">
+						<img src="images/ban1.png" alt="ban1">
+					</div>	
+				</div>
+			</section>
+			<section class="container">
+				<h2>Детская одежда</h2><br>
+				<p>Современные родители стремятся окружить малыша красивыми и удобными вещами с первых дней жизни. Если раньше месячному крохе полагалось лежать укутанным в несколько пеленок, то сегодня он уже щеголяет в ярких боди и ползунках.</p>
+				<br>
+				<h2>Интернет-магазин детской одежды - MiuKid</h2><br>
+				<p>В этом разделе нашего интернет-магазина вы найдете одежду и текстильные изделия для детей, удобные, стильные и недорогие.
+				<div class="spisok">
+					<ul>
+						<li>Конверты зимние, демисезонные, летние и нарядные на выписку согреют ребенка в холодное время года и сохранят ощущение прохлады летом. Теплые варианты выполняются из шерстяных тканей и подбиваются мехом. Прохладные — из флиса и хлопка. Модели-трансформеры представляют собой одеяла, которые превращаются в конверты благодаря системе липучек.
+						</li>
+						
+						<li>Кружевные комплекты на выписку и подарочные наборы идеально подойдут в качестве подарка новоиспеченным родителям.
+						</li>
+						<li>Крестильные наборы состоят из нескольких предметов (уголка, рубашки, чепца с лентами).
+						</li>
+						<li>Детская одежда включает в себя самые разные изделия из текстиля: ползунки, боди и комбинезоны для самых маленьких, водолазки, штанишки и колготки для ребят разных возрастов.
+						</li>
+						<li>Белье для малышей — это комплекты из трусиков и маечек для мальчиков и девочек, украшенные яркими рисунками и аппликациями.
+						</li>
+						<li>Антицарапки, носочки и пинетки относятся к классу предметов для грудничков. Мягкие перчатки защитят лицо крохи от царапин. Носки и пинетки согреют ножки.
+						</li>
+						<li>Шапки и плащи-дождевики используются в межсезонье и зимой. В категории представлены модели как для ребят, которым еще не исполнилось и года, так и для будущих школьников.
+						</li>
+					</ul>
+				</div>
+				<br>
+				<p>Выбрать и купить детскую одежду в Москве в интернет-магазине MiuKid вам помогут отзывы наших покупателей, а также подробные описания и фотографии товаров.</p>
+				<br>
+			</section>
+        </main>
+        
+        <footer>
+            <section class="container">
+				<div class="ft-center">
+					<div class="information">
+						<h4>Информация</h4>
+						<a href="#">О нас</a>
+						<br>
+						<a href="#">Доставка и возврат</a>
+						<br>
+						<a href="#">Уведомление о конфиденциальности</a>
+						<br>
+						<a href="#">Условия использования</a>
+						<br>
+						<a href="#">RSS</a>
+						<br>
+					</div>
+					<div class="information center">
+						<h4>Обслуживание</h4>
+						<a href="#">Онлайн-поддержка</a>
+						<br>
+						<a href="#">Справка и FAQ</a>
+						<br>
+						<a href="#">Колл-центр</a>
+						<br>
+						<a href="#">Контакты</a>
+						<br>
+						<a href="#">Отзывы</a>
+						<br>
+					</div>
+				</div>
+			</section>
+            <section class="container">
+				<div class="footerending">
+					<div class="fted-left">
+						<p>Copyright &copy  SednevaS 2022  Все права защищены</p>
+					</div>
+					<div class="fted-left two">
+						<ul>
+							<a href="#"><img src="images/icon1.png" alt="icon"></a>
+							<a href="#"><img src="images/icon2.png" alt="icon"></a>
+							<a href="#"><img src="images/icon3.png" alt="icon"></a>
+							<a href="#"><img src="images/icon4.png" alt="icon"></a>
+							<a href="#"><img src="images/icon5.png" alt="icon"></a>
+						</ul>
+					</div>
+				</div>
+			</section>
+        </footer>
+    </body>
+</html>

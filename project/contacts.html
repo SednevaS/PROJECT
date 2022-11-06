@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Контакты</title>
+        
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
+        <script defer src="js/slider.js"></script>
+        <script defer src="js/main.js"></script>
+    </head>
+    
+    <body>
+        <header>
+            <section class="container">
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города"><img src="images/location-current.svg" alt="loc"><span></span></div>
+            </section>
+            <section class="container">
+				<div class="reg">
+					<a class="logo"></a>
+				<div class="search2 homepage">
+					<form method="get" action="/search" role="search" class=search-form">
+						<input name="q" class="search-input" type="text" value placeholder="Поиск..." autocomplete="off">
+						<input type="hidden" name="post-type" value="product">
+						<button type="submit" class="search">
+							<img src="images/search.svg" alt="search">	
+						</button>
+					</form>
+				</div>
+				<div class="shoppihg-cart">
+					<a href="#" class="user"></a>
+					<a href="order.html" class="shopping"></a>
+				</div>	
+				</div>
+			</section>
+            <section class="container">
+                <nav class="topmenu">
+                    <a href="index.html"><span>Главная страница</span></a>
+                    <a href="catalog.html"><span>Каталог</span></a>
+                    <a href="product.html"><span>Товар</span></a>
+                    <a href="order.html"><span>Корзина</span></a>
+                    <a href="contacts.html"><span>Контакты</span></a>
+                </nav>
+            </section>
+        </header>
+        
+        <main>
+            
+                <div class="packed">
+                    <section>
+                        <div class="address">
+                            <img src='images/Contakt.png' alt="group">
+                            <h3>Адрес:</h3>
+                            <p>109428, г. Москва,
+								Проезд Институтский 1-й д. 5, стр. 1
+							</p>
+                            <h3>Телефоны:</h3>
+                                <ul>
+                                    <li><a href="#" class="phone">+7 (495) 419-00-19</a></li>
+                                    <li><a href="#" class="phone">+7 (495) 419-00-19</a></li>
+                                </ul>
+                            <h3>Online Сервис</h3>
+                            <p class="web"><a href="#">www.site.com</a></p>
+                            <p class="email"><a href="mailto:hello.site@gmail.com">hello.site@gmail.com</a></p>
+                        </div>
+                    </section>
+                    <section>
+                        <div class="send">
+                            <form action="" method="GET" name="form1">
+                                <fieldset>
+                                    <h3>Обратная связь</h3>
+                                    <h4>Имя</h4>                   
+                                    <input type="text" name="name" placeholder="Your Name"></input>
+                                    <h4>Email</h4> 
+                                    <input type="email" name="email" placeholder="Your Email"></input>
+                                    <h4>Сообщение</h4>
+                                    <textarea name="message" placeholder="Your Message"></textarea>
+                                    <button type="button">Отправить</button>
+                                </fieldset>
+                            </form>
+                         </div>
+                    </section>
+                </div>
+				<div class="map">
+					<a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a>
+					<a href="https://yandex.ru/maps/213/moscow/?ll=37.611812%2C55.789685&utm_medium=mapframe&utm_source=maps&z=12" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс Карты — транспорт, навигация, поиск мест</a>
+					<iframe src="https://yandex.ru/map-widget/v1/-/CCU6bMH6-B" width="940" height="480" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+				</div>
+            <!--<div class="map">
+                <!--<img src='images/map.png' alt="map">
+            </div>-->
+        </main>
+        
+        <footer>
+            <section class="container">
+				<div class="ft-center">
+					<div class="information">
+						<h4>Информация</h4>
+						<a href="#">О нас</a>
+						<br>
+						<a href="#">Доставка и возврат</a>
+						<br>
+						<a href="#">Уведомление о конфиденциальности</a>
+						<br>
+						<a href="#">Условия использования</a>
+						<br>
+						<a href="#">RSS</a>
+						<br>
+					</div>
+					<div class="information center">
+						<h4>Обслуживание</h4>
+						<a href="#">Онлайн-поддержка</a>
+						<br>
+						<a href="#">Справка и FAQ</a>
+						<br>
+						<a href="#">Колл-центр</a>
+						<br>
+						<a href="#">Контакты</a>
+						<br>
+						<a href="#">Отзывы</a>
+						<br>
+					</div>
+				</div>
+			</section>
+            <section class="container">
+				<div class="footerending">
+					<div class="fted-left">
+						<p>Copyright &copy  SednevaS 2022  Все права защищены</p>
+					</div>
+					<div class="fted-left two">
+						<ul>
+							<a href="#"><img src="images/icon1.png" alt="icon"></a>
+							<a href="#"><img src="images/icon2.png" alt="icon"></a>
+							<a href="#"><img src="images/icon3.png" alt="icon"></a>
+							<a href="#"><img src="images/icon4.png" alt="icon"></a>
+							<a href="#"><img src="images/icon5.png" alt="icon"></a>
+						</ul>
+					</div>
+				</div>
+			</section>
+        </footer>
+    </body>
+</html>

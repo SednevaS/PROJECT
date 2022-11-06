@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Карточка товара</title>
+        
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <script defer src="js/jquery-3.6.1.min.js"></script>
+        <script defer src="js/jquery-ui.min.js"></script>
+        <script defer src="js/gallery.js"></script>
+        <script defer src="js/lightbox.js"></script>
+        <script defer src="js/main.js"></script>
+    </head>
+    
+    <body>
+       <header>
+            <section class="container">
+                <div id="city" title="Если ваш город определен неправильно, нажмите для выбора правильного города"><img src="images/location-current.svg" alt="loc"><span></span></div>
+            </section>
+            <section class="container">
+				<div class="reg">
+					<a class="logo"></a>
+				<div class="search2 homepage">
+					<form method="get" action="/search" role="search" class=search-form">
+						<input name="q" class="search-input" type="text" value placeholder="Поиск..." autocomplete="off">
+						<input type="hidden" name="post-type" value="product">
+						<button type="submit" class="search">
+							<img src="images/search.svg" alt="search">	
+						</button>
+					</form>
+				</div>
+				<div class="shoppihg-cart">
+					<a href="#" class="user"></a>
+					<a href="order.html" class="shopping"></a>
+				</div>	
+				</div>
+			</section>
+            <section class="container">
+                <nav class="topmenu">
+                    <a href="index.html"><span>Главная страница</span></a>
+                    <a href="catalog.html"><span>Каталог</span></a>
+                    <a href="product.html"><span>Товар</span></a>
+                    <a href="order.html"><span>Корзина</span></a>
+                    <a href="contacts.html"><span>Контакты</span></a>
+                </nav>
+            </section>
+        </header>
+        
+        <main>
+            <section class="container">
+                <ul class="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="index.html">
+                            <span itemprop="name">Главная страница</span>
+                        </a>
+                        <meta itemprop="position" content="1">
+                        <link itemprop="url" href="index.html">
+                    </li>
+                    
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <a href="catalog.html">
+                            <span itemprop="name">Каталог</span>
+                        </a>
+                        <meta itemprop="position" content="2">
+                        <link itemprop="url" href="catalog.html">
+                    </li>
+                    
+                    <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+                        <span itemprop="name">Товар</span>
+                        <meta itemprop="position" content="3">
+                        <link itemprop="url" href="product.html">
+                    </li>
+                </ul>
+            </section>
+            
+            <section class="container">
+                <div class="product" data-product-id="12345" itemscope itemtype="https://schema.org/Product">
+                    <div class="images">
+                        <div class="bigimage">
+                            <img src="images/img63.jpg" alt="капибара" itemprop="image">
+                        </div>
+                        
+                        <div class="gallery">
+                            <div>
+                                <div class="rail">
+                                    <img src="images/mini_img63.jpg" alt="капибара" itemprop="image">
+                                    <img src="images/mini_img64.jpg" alt="пельмень" itemprop="image">
+                                    <img src="images/mini_img65.jpg" alt="дошик" itemprop="image">
+                                    <img src="images/mini_img66.jpg" alt="книга" itemprop="image">
+                                    <img src="images/mini_img63.jpg" alt="медвед" itemprop="image">
+                                    <img src="images/mini_img64.jpg" alt="капибара">
+                                    <img src="images/mini_img65.jpg" alt="пельмень">
+                                    <img src="images/mini_img66.jpg" alt="дошик">
+                                    <!--<img src="images/mini_kniga.jpg" alt="книга">
+                                    <img src="images/mini_misha.jpg" alt="медвед">
+                                    <img src="images/mini_zver.jpg" alt="капибара">
+                                    <img src="images/mini_pelmen.jpg" alt="пельмень">
+                                    <img src="images/mini_doshik.jpg" alt="дошик">
+                                    <img src="images/mini_kniga.jpg" alt="книга">
+                                    <img src="images/mini_misha.jpg" alt="медвед"> -->
+                                </div>
+                            </div>
+                            <button type="button" class="gal_left disabled"><span>&#8249;</span></button>
+                            <button type="button" class="gal_right"><span>&#8250;</span></button>
+                        </div>
+                    </div>
+                    
+                    <div class="offer">
+                        <h1 itemprop="name">Рюкзак</h1>
+                        <p class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                            <span itemprop="price">1000</span>
+                            <meta itemprop="priceCurrency" content="RUB">
+                        </p>
+                        <button type="button" class="btn btn-danger btn-buy">КУПИТЬ</button>
+                        <p itemprop="description">Рюкзак детский</p>
+                        <p>Оригинальный дизайн и натуральные материалы</p>
+                        <p>Удобная фиксация на плечиках ребенка</p>
+                        <p>Многофункциональные отделения внутри рюкзачка</p>
+                        <!--<p>Характеристики товара очень хорошие</p>
+                        <p>Характеристики товара очень хорошие</p>
+                        <p>Характеристики товара очень хорошие</p>-->
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer>
+            <section class="container">
+				<div class="ft-center">
+					<div class="information">
+						<h4>Информация</h4>
+						<a href="#">О нас</a>
+						<br>
+						<a href="#">Доставка и возврат</a>
+						<br>
+						<a href="#">Уведомление о конфиденциальности</a>
+						<br>
+						<a href="#">Условия использования</a>
+						<br>
+						<a href="#">RSS</a>
+						<br>
+					</div>
+					<div class="information center">
+						<h4>Обслуживание</h4>
+						<a href="#">Онлайн-поддержка</a>
+						<br>
+						<a href="#">Справка и FAQ</a>
+						<br>
+						<a href="#">Колл-центр</a>
+						<br>
+						<a href="#">Контакты</a>
+						<br>
+						<a href="#">Отзывы</a>
+						<br>
+					</div>
+				</div>
+			</section>
+            <section class="container">
+				<div class="footerending">
+					<div class="fted-left">
+						<p>Copyright &copy  SednevaS 2022  Все права защищены</p>
+					</div>
+					<div class="fted-left two">
+						<ul>
+							<a href="#"><img src="images/icon1.png" alt="icon"></a>
+							<a href="#"><img src="images/icon2.png" alt="icon"></a>
+							<a href="#"><img src="images/icon3.png" alt="icon"></a>
+							<a href="#"><img src="images/icon4.png" alt="icon"></a>
+							<a href="#"><img src="images/icon5.png" alt="icon"></a>
+						</ul>
+					</div>
+				</div>
+			</section>
+        </footer>
+    </body>
+</html>
