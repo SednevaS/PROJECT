@@ -303,16 +303,16 @@ footer {
 	opacity: 0.3;
 }
 .shopping {
-	float: left;
-    width: 50px;
-    height: 50px;
+	float: right;
+    width: 40px;
+    height: 40px;
     background: url('../images/shopping-cart.svg') center center no-repeat;
 	/*margin: 20px 0 20px;*/
 }
 .user {
-	float: right;
-    width: 50px;
-    height: 50px;
+	float: left;
+    width: 40px;
+    height: 40px;
     background: url('../images/user.svg') center center no-repeat;
 }
 .search2.homepage {
@@ -529,6 +529,8 @@ footer a {
 	gap: 25px;
 	grid-template-areas: 'a a a' 'b c d' 'g g g';
 	padding-bottom: 50px;
+	
+
 }
 .grid > div {
 	position: relative;
@@ -637,7 +639,7 @@ footer a {
 #slider-range .ui-widget-header {
     background: #7a7a95;
 }
-.catalog article {
+article {
     /* display: table; */
     /*display: flex;
     flex-wrap: wrap;
@@ -647,18 +649,34 @@ footer a {
 	grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 	width: 100%;
 	gap: 5px;
+	margin: 0 0 10px;
 }
-.grid > div {
+
+
+article > div {
 	position: relative;
 }
 
-.grid > div > img {
+article > div > img {
 	width: 100%;
 	display: block;
 }
 /*.grid > div > h4 {
 	position: absolute;
 }*/
+.cat-item {
+	border: 1px solid #bfb7c9;
+
+	border-radius: 5px;
+    /*width: 140px;
+    height: 290px;
+    border: 5px solid red;
+    /*float: left;*/
+    /* display: inline-block; */
+    /* vertical-align: top;*/ 
+    
+}
+
 article button {
 	width: 100px;
     height: 30px;
@@ -667,15 +685,7 @@ article button {
 	opacity: 0.8;
 }
 
-/*.cat-item {
-    width: 140px;
-    height: 290px;
-    border: 5px solid red;
-    /*float: left;*/
-    /* display: inline-block; */
-    /* vertical-align: top; 
-    
-}*/
+
 
 /* breadcrumbs */
 .breadcrumbs {
@@ -896,7 +906,7 @@ article button {
 	margin: 50px 0 0;
 }
 .map {
-	width: 940px;
+	width: 980px;
 	height: 480px;
 	padding-bottom: 113px;
 	margin: 0 auto;

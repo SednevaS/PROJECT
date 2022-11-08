@@ -296,7 +296,10 @@ $(function(){
         let count = 1;
         let basket = JSON.parse(localStorage.getItem('basket'));
         if (!basket) basket = [];
-        basket.push(...startbasket);
+        //basket.push(...startbasket);
+		for (let item of basket) {
+			item.quantity = 1;
+		}
         for (let item of basket) {
             let hlpstr = '<tr data-id="'+item.id+'"><th scope="row" class="index">'+count+'</th><td class="name"><a href="'+item.link+'">'+item.name+'</a></td><td class="qty"><span class="minus">&minus;</span><strong>'+item.quantity+'</strong><span class="plus">&plus;</span></td><td class="price">'+item.price+'</td><td class="sum"></td><td class="delete icon">&#xe906;</td></tr>';
             point.append(hlpstr);
@@ -320,7 +323,7 @@ $(function(){
         $('.order form .submit').click(function(){
             $('.is-invalid').removeClass('is-invalid');
             $('.invalid-feedback').remove();
-            let form = document.forms[0];
+            let form = document.forms.mainform;
             let valid = true;
             if (!form.name.value) {
                 $('form #name').addClass('is-invalid').parents('.mb-3').append('<div class="invalid-feedback">Должно быть указано имя!</div>');
@@ -334,6 +337,9 @@ $(function(){
                 $('form #phone').addClass('is-invalid').parents('.mb-3').append('<div class="invalid-feedback">Должен быть указан телефон!</div>');
                 valid = false;
             }
+			if (!form.agree.checked) {
+				valid = false;
+			}
             if (valid) {
                 let products = [];
                 $('.table tbody tr').each(function(){
